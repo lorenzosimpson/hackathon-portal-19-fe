@@ -5,15 +5,15 @@ export const axiosWithAuth = async () => {
    try {
       await axios({
          method: 'post',
-         url: 'https://hackathonportal.auth0.com/oauth/token',
+         url: 'https://dev-9qtopu1h.auth0.com/oauth/token',
          headers: {
             'content-type': 'application/json'
          },
          data: {
-            client_id: 'K2PJh73q41yFryA6EJdr7Cyq3nVqv1vo',
+            client_id: 'K9A2vsSCFuYCZrBKZp266qLvq9UqObHM',
             client_secret:
-               'H2SNZmRezyGuQIafPaSiByrA7_QYt4jtDikInhG-bciH-JwceuokZaxNkJMx_edh',
-            audience: 'https://hackathon-portal.herokuapp.com/',
+               'DNZDTXytEGaDodFa9OzfkMhyWvHcqDRSvxx8fTROTeoXsTUzPDrzAAW7vweZXS7w-bciH-JwceuokZaxNkJMx_edh',
+            audience: 'https://hackathon-portal-labs-19.herokuapp.com/',
             grant_type: 'client_credentials'
          }
       })
@@ -23,7 +23,7 @@ export const axiosWithAuth = async () => {
       console.log(err);
    } finally {
       return axios.create({
-         baseURL: 'https://hackathon-portal.herokuapp.com/api',
+         baseURL: 'https://hackathon-portal-labs-19.herokuapp.com/api',
          // baseURL: 'http://localhost:5000/api',
          headers: {
             Authorization: `Bearer ${token}`

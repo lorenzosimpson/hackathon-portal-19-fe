@@ -1,5 +1,5 @@
 {
-    "domain": "hackathonportal.auth0.com",
-    "clientId": "zLW0LyP3MXqLKvhLUgK1zplBsdjvIui1",
-    "audience": "https://hackathon-portal.herokuapp.com/"
+    "domain": "dev-9qtopu1h.auth0.com",
+    "clientId": "K9A2vsSCFuYCZrBKZp266qLvq9UqObHM",
+    "audience": "https://hackathon-portal-labs-19.herokuapp.com/"
   }
