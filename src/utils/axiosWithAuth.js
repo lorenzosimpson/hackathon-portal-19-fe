@@ -7,7 +7,8 @@ export const axiosWithAuth = async () => {
          method: 'post',
          url: 'https://dev-9qtopu1h.auth0.com/oauth/token',
          headers: {
-            'content-type': 'application/json'
+            'content-type': 'application/json',
+            // 'access-control-allow-origin': '*'
          },
          data: {
             client_id: 'fHa42S96HkYM79Ig01A6tXdkgi7LHCUT',
@@ -18,7 +19,7 @@ export const axiosWithAuth = async () => {
          }
       })
          .then(res => (token = res.data.access_token))
-         .catch(err => console.log(err));
+         .catch(err => console.log(err, 'axios with auth err'));
    } catch (err) {
       console.log(err);
    } finally {
