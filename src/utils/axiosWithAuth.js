@@ -10,9 +10,9 @@ export const axiosWithAuth = async () => {
             'content-type': 'application/json'
          },
          data: {
-            client_id: 'K9A2vsSCFuYCZrBKZp266qLvq9UqObHM',
+            client_id: 'fHa42S96HkYM79Ig01A6tXdkgi7LHCUT',
             client_secret:
-               'DNZDTXytEGaDodFa9OzfkMhyWvHcqDRSvxx8fTROTeoXsTUzPDrzAAW7vweZXS7w-bciH-JwceuokZaxNkJMx_edh',
+               'pl9D05xNk37Clu238_nH5dh0ulk9oTThQ24JLGP5AC3uC5fThfNjZdogkXj9CEfG-bciH-JwceuokZaxNkJMx_edh',
             audience: 'https://hackathon-portal-labs-19.herokuapp.com/',
             grant_type: 'client_credentials'
          }
