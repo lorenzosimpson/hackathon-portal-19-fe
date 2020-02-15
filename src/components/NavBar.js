@@ -18,7 +18,7 @@ const NavBar = props => {
                <p
                   className="navBarLink"
                   id='login-btn'
-                  onClick={() => loginWithRedirect()}
+                  onClick={() => loginWithRedirect({})}
                >
                   Log in
                </p>
